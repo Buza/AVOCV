@@ -1,0 +1,465 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E78E19B0208E3AC8006D3317 /* OpenCVBridge.mm in Sources */ = {isa = PBXBuildFile; fileRef = E78E19AF208E3AC8006D3317 /* OpenCVBridge.mm */; };
+		E78E19B5208E4D4E006D3317 /* OpenCVProcessor.mm in Sources */ = {isa = PBXBuildFile; fileRef = E78E19B4208E4D4D006D3317 /* OpenCVProcessor.mm */; };
+		E78E19BD208E7FB3006D3317 /* AAPLShaders.metal in Sources */ = {isa = PBXBuildFile; fileRef = E78E19BB208E7FB3006D3317 /* AAPLShaders.metal */; };
+		E78E19BE208E7FB3006D3317 /* AAPLRenderer.mm in Sources */ = {isa = PBXBuildFile; fileRef = E78E19BC208E7FB3006D3317 /* AAPLRenderer.mm */; };
+		E7C56752208BE18500CD8FB1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7C56751208BE18500CD8FB1 /* AppDelegate.swift */; };
+		E7C56754208BE18500CD8FB1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E7C56753208BE18500CD8FB1 /* Assets.xcassets */; };
+		E7C56757208BE18500CD8FB1 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = E7C56755208BE18500CD8FB1 /* MainMenu.xib */; };
+		E7C56760208BE1D200CD8FB1 /* CameraController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7C5675F208BE1D200CD8FB1 /* CameraController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		E78E19A2208CFB19006D3317 /* AVCam-OSX.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "AVCam-OSX.entitlements"; sourceTree = "<group>"; };
+		E78E19A3208D8916006D3317 /* AVCam-OSX-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AVCam-OSX-Bridging-Header.h"; sourceTree = "<group>"; };
+		E78E19AC208E3AB7006D3317 /* OpenCVBridge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OpenCVBridge.h; sourceTree = "<group>"; };
+		E78E19AF208E3AC8006D3317 /* OpenCVBridge.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = OpenCVBridge.mm; sourceTree = "<group>"; };
+		E78E19B1208E4B34006D3317 /* OpenCVProcessor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpenCVProcessor.h; sourceTree = "<group>"; };
+		E78E19B4208E4D4D006D3317 /* OpenCVProcessor.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = OpenCVProcessor.mm; sourceTree = "<group>"; };
+		E78E19B9208E7FB2006D3317 /* AAPLShaderTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AAPLShaderTypes.h; sourceTree = "<group>"; };
+		E78E19BA208E7FB2006D3317 /* AAPLRenderer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AAPLRenderer.h; sourceTree = "<group>"; };
+		E78E19BB208E7FB3006D3317 /* AAPLShaders.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = AAPLShaders.metal; sourceTree = "<group>"; };
+		E78E19BC208E7FB3006D3317 /* AAPLRenderer.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = AAPLRenderer.mm; sourceTree = "<group>"; };
+		E7C5674E208BE18500CD8FB1 /* AVOCV-OSX.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "AVOCV-OSX.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E7C56751208BE18500CD8FB1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E7C56753208BE18500CD8FB1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E7C56756208BE18500CD8FB1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		E7C56758208BE18500CD8FB1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E7C56759208BE18500CD8FB1 /* AVCam_OSX.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = AVCam_OSX.entitlements; sourceTree = "<group>"; };
+		E7C5675F208BE1D200CD8FB1 /* CameraController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraController.swift; sourceTree = "<group>"; };
+		E7EE573520939B6A00002DCA /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E7C5674B208BE18500CD8FB1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E75BE1C62093816200460D80 /* Metal */ = {
+			isa = PBXGroup;
+			children = (
+				E78E19BA208E7FB2006D3317 /* AAPLRenderer.h */,
+				E78E19BC208E7FB3006D3317 /* AAPLRenderer.mm */,
+				E78E19BB208E7FB3006D3317 /* AAPLShaders.metal */,
+				E78E19B9208E7FB2006D3317 /* AAPLShaderTypes.h */,
+			);
+			path = Metal;
+			sourceTree = "<group>";
+		};
+		E75BE1C72093816E00460D80 /* CV */ = {
+			isa = PBXGroup;
+			children = (
+				E78E19AC208E3AB7006D3317 /* OpenCVBridge.h */,
+				E78E19AF208E3AC8006D3317 /* OpenCVBridge.mm */,
+				E78E19B1208E4B34006D3317 /* OpenCVProcessor.h */,
+				E78E19B4208E4D4D006D3317 /* OpenCVProcessor.mm */,
+			);
+			path = CV;
+			sourceTree = "<group>";
+		};
+		E7C56745208BE18400CD8FB1 = {
+			isa = PBXGroup;
+			children = (
+				E7C56750208BE18500CD8FB1 /* AVCam-OSX */,
+				E7C5674F208BE18500CD8FB1 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E7C5674F208BE18500CD8FB1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E7C5674E208BE18500CD8FB1 /* AVOCV-OSX.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E7C56750208BE18500CD8FB1 /* AVCam-OSX */ = {
+			isa = PBXGroup;
+			children = (
+				E7C56751208BE18500CD8FB1 /* AppDelegate.swift */,
+				E7C5675F208BE1D200CD8FB1 /* CameraController.swift */,
+				E75BE1C72093816E00460D80 /* CV */,
+				E75BE1C62093816200460D80 /* Metal */,
+				E78E19A2208CFB19006D3317 /* AVCam-OSX.entitlements */,
+				E7C56753208BE18500CD8FB1 /* Assets.xcassets */,
+				E7C56755208BE18500CD8FB1 /* MainMenu.xib */,
+				E7C56758208BE18500CD8FB1 /* Info.plist */,
+				E7C56759208BE18500CD8FB1 /* AVCam_OSX.entitlements */,
+				E78E19A3208D8916006D3317 /* AVCam-OSX-Bridging-Header.h */,
+				E7EE573520939B6A00002DCA /* README.md */,
+			);
+			path = "AVCam-OSX";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E7C5674D208BE18500CD8FB1 /* AVOCV-OSX */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E7C5675C208BE18500CD8FB1 /* Build configuration list for PBXNativeTarget "AVOCV-OSX" */;
+			buildPhases = (
+				E7C5674A208BE18500CD8FB1 /* Sources */,
+				E7C5674B208BE18500CD8FB1 /* Frameworks */,
+				E7C5674C208BE18500CD8FB1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "AVOCV-OSX";
+			productName = "AVCam-OSX";
+			productReference = E7C5674E208BE18500CD8FB1 /* AVOCV-OSX.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E7C56746208BE18500CD8FB1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = BuzaMoto;
+				TargetAttributes = {
+					E7C5674D208BE18500CD8FB1 = {
+						CreatedOnToolsVersion = 9.3;
+						LastSwiftMigration = 0930;
+						SystemCapabilities = {
+							com.apple.Sandbox = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = E7C56749208BE18500CD8FB1 /* Build configuration list for PBXProject "AVOCV-OSX" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E7C56745208BE18400CD8FB1;
+			productRefGroup = E7C5674F208BE18500CD8FB1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E7C5674D208BE18500CD8FB1 /* AVOCV-OSX */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E7C5674C208BE18500CD8FB1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E7C56754208BE18500CD8FB1 /* Assets.xcassets in Resources */,
+				E7C56757208BE18500CD8FB1 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E7C5674A208BE18500CD8FB1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E78E19BE208E7FB3006D3317 /* AAPLRenderer.mm in Sources */,
+				E7C56760208BE1D200CD8FB1 /* CameraController.swift in Sources */,
+				E7C56752208BE18500CD8FB1 /* AppDelegate.swift in Sources */,
+				E78E19B0208E3AC8006D3317 /* OpenCVBridge.mm in Sources */,
+				E78E19BD208E7FB3006D3317 /* AAPLShaders.metal in Sources */,
+				E78E19B5208E4D4E006D3317 /* OpenCVProcessor.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		E7C56755208BE18500CD8FB1 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E7C56756208BE18500CD8FB1 /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E7C5675A208BE18500CD8FB1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = /usr/local/include;
+				LIBRARY_SEARCH_PATHS = /usr/local/lib;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = (
+					"-lopencv_calib3d",
+					"-lopencv_core",
+					"-lopencv_features2d",
+					"-lopencv_flann",
+					"-lopencv_highgui",
+					"-lopencv_imgcodecs",
+					"-lopencv_imgproc",
+					"-lopencv_ml",
+					"-lopencv_objdetect",
+					"-lopencv_photo",
+					"-lopencv_shape",
+					"-lopencv_stitching",
+					"-lopencv_superres",
+					"-lopencv_ts",
+					"-lopencv_video",
+					"-lopencv_videoio",
+					"-lopencv_videostab",
+				);
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E7C5675B208BE18500CD8FB1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = /usr/local/include;
+				LIBRARY_SEARCH_PATHS = /usr/local/lib;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = (
+					"-lopencv_calib3d",
+					"-lopencv_core",
+					"-lopencv_features2d",
+					"-lopencv_flann",
+					"-lopencv_highgui",
+					"-lopencv_imgcodecs",
+					"-lopencv_imgproc",
+					"-lopencv_ml",
+					"-lopencv_objdetect",
+					"-lopencv_photo",
+					"-lopencv_shape",
+					"-lopencv_stitching",
+					"-lopencv_superres",
+					"-lopencv_ts",
+					"-lopencv_video",
+					"-lopencv_videoio",
+					"-lopencv_videostab",
+				);
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		E7C5675D208BE18500CD8FB1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = "AVCam-OSX/AVCam-OSX.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = D85UP454QU;
+				INFOPLIST_FILE = "AVCam-OSX/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				OTHER_LDFLAGS = (
+					"-lopencv_calib3d",
+					"-lopencv_core",
+					"-lopencv_features2d",
+					"-lopencv_flann",
+					"-lopencv_highgui",
+					"-lopencv_imgcodecs",
+					"-lopencv_imgproc",
+					"-lopencv_ml",
+					"-lopencv_objdetect",
+					"-lopencv_photo",
+					"-lopencv_shape",
+					"-lopencv_stitching",
+					"-lopencv_superres",
+					"-lopencv_video",
+					"-lopencv_videoio",
+					"-lopencv_videostab",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.buzamoto.avcam-mac.AVCam-OSX";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "AVCam-OSX/AVCam-OSX-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Debug;
+		};
+		E7C5675E208BE18500CD8FB1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = "AVCam-OSX/AVCam-OSX.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = D85UP454QU;
+				INFOPLIST_FILE = "AVCam-OSX/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				OTHER_LDFLAGS = (
+					"-lopencv_calib3d",
+					"-lopencv_core",
+					"-lopencv_features2d",
+					"-lopencv_flann",
+					"-lopencv_highgui",
+					"-lopencv_imgcodecs",
+					"-lopencv_imgproc",
+					"-lopencv_ml",
+					"-lopencv_objdetect",
+					"-lopencv_photo",
+					"-lopencv_shape",
+					"-lopencv_stitching",
+					"-lopencv_superres",
+					"-lopencv_video",
+					"-lopencv_videoio",
+					"-lopencv_videostab",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.buzamoto.avcam-mac.AVCam-OSX";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "AVCam-OSX/AVCam-OSX-Bridging-Header.h";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E7C56749208BE18500CD8FB1 /* Build configuration list for PBXProject "AVOCV-OSX" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E7C5675A208BE18500CD8FB1 /* Debug */,
+				E7C5675B208BE18500CD8FB1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E7C5675C208BE18500CD8FB1 /* Build configuration list for PBXNativeTarget "AVOCV-OSX" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E7C5675D208BE18500CD8FB1 /* Debug */,
+				E7C5675E208BE18500CD8FB1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E7C56746208BE18500CD8FB1 /* Project object */;
+}
