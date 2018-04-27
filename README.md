@@ -27,7 +27,7 @@ For example, the line
 IplImage *resultImage = [OpenCVProcessor cannyTest:frameImage];
 
 in captureOutput will create an OpenCV-processed image from the
-current input frame, and send the pixels to Metal to be rendered.
+current input frame, and send the pixels to [Metal](https://developer.apple.com/documentation/metal) to be rendered.
 
 For users that would like to implement their own examples, simply
 look at OpenCVProcessor.m for examples.
