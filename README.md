@@ -16,7 +16,9 @@ See [this tutorial](https://blogs.wcode.org/2014/10/howto-install-build-and-use-
 
 At the heart of AVOCV is the delegate method:
 
+```
 public func captureOutput(_ output: AVCaptureOutput, didOutput sampleBuffer: CMSampleBuffer, from connection: AVCaptureConnection)
+```
 
 in CameraController.swift. This is a callback procedure that is invoked
 by AVFoundation to provide direct access to the pixels coming from 
@@ -26,7 +28,9 @@ captureOutput method.
 
 For example, the line
 
+```
 IplImage *resultImage = [OpenCVProcessor cannyTest:frameImage];
+```
 
 in captureOutput will create an OpenCV-processed image from the
 current input frame, and send the pixels to [Metal](https://developer.apple.com/documentation/metal) to be rendered.
