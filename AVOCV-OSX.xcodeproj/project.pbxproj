@@ -35,7 +35,6 @@
 		E7C56758208BE18500CD8FB1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E7C56759208BE18500CD8FB1 /* AVCam_OSX.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = AVCam_OSX.entitlements; sourceTree = "<group>"; };
 		E7C5675F208BE1D200CD8FB1 /* CameraController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraController.swift; sourceTree = "<group>"; };
-		E7EE573520939B6A00002DCA /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,7 +99,6 @@
 				E7C56758208BE18500CD8FB1 /* Info.plist */,
 				E7C56759208BE18500CD8FB1 /* AVCam_OSX.entitlements */,
 				E78E19A3208D8916006D3317 /* AVCam-OSX-Bridging-Header.h */,
-				E7EE573520939B6A00002DCA /* README.md */,
 			);
 			path = "AVCam-OSX";
 			sourceTree = "<group>";

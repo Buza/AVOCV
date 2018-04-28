@@ -74,7 +74,7 @@
     frameImage->imageDataOrigin = baseAddress + offset;
 
     //Process the frame, and get the result.
-    IplImage *resultImage = [OpenCVProcessor dilate:frameImage];
+    IplImage *resultImage = [OpenCVProcessor cannyTest:frameImage];
 
     //Another example.
     //IplImage *resultImage = [OpenCVProcessor opticalFlowPyrLK:frameImage];

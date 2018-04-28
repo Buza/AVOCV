@@ -1,5 +1,7 @@
 #  AVOCV: An AVFoundation-based OpenCV experimentation environment.
 
+![](https://buzamoto.s3.amazonaws.com/acvocv-cap-small.png)
+
 AVOCV was built in order to create an extremely simple and
 lightweight OpenCV experimentation environment for
 OS X 10.13.x. This is a more modern update to CVOCV, a QTKit + OpenGL

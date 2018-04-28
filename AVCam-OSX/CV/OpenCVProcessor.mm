@@ -47,7 +47,7 @@
     cvSetImageCOI(frame, 1);
     
     cvCopy(frame, tgray, 0);
-    cvCanny(tgray, gray, 0, 5, 5);
+    cvCanny(tgray, gray, 100, 500, 5);
     
     cvDilate(gray, gray, 0, 1);
     
@@ -195,13 +195,12 @@
     
     cvCvtColor(frame, tgray, CV_RGB2GRAY);
     
-    cvCanny(tgray, dst, 50, 200, 3);
-    cvCvtColor( dst, color_dst, CV_GRAY2BGR );
+    cvCanny(tgray, dst, 80, 350);
+    cvCvtColor( dst, color_dst, CV_GRAY2BGR);
     
-    CvSeq* lines = cvHoughLines2(dst, storage, CV_HOUGH_PROBABILISTIC, 1, CV_PI/180, 50, 50, 10);
+    CvSeq* lines = cvHoughLines2(dst, storage, CV_HOUGH_PROBABILISTIC, 1, CV_PI/180, 20, 20, 50);
     
-    int i;
-    for(i = 0; i < lines->total; i++) {
+    for(int i = 0; i < lines->total; i++) {
         CvPoint* line = (CvPoint*)cvGetSeqElem(lines,i);
         cvLine( color_dst, line[0], line[1], CV_RGB(255,0,0), 1, CV_AA, 0);
     }
