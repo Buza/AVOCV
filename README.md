@@ -39,12 +39,10 @@ For users that would like to implement their own examples, simply
 look at OpenCVProcessor.m for examples.
 
 ## Contributions
--------------
 
 Contributions in the form of elegant, demonstrative examples are
 welcome and encouraged. Contact me if you have something you
 think would make a nice addition to this project.
 
-2018 Kyle Buza
-buza@buzamoto.com
+2018 buza@buzamoto.com
 

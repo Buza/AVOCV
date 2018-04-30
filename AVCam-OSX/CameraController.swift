@@ -69,7 +69,9 @@ class CameraController: NSObject {
     fileprivate func addVideoInput() {
         
         let videoDevice = AVCaptureDevice.default(for: .video)
-
+        videoDevice?.linkedDevices
+        //let linkedDevices = AVCaptureDevice.linkedDevices
+        
         do {
             let videoDeviceInput = try AVCaptureDeviceInput(device: videoDevice!)
             
